@@ -1,5 +1,6 @@
 @import "reset";
 @import "variable";
+@import "layout";
 
 body {
   background-color: $very-light-gray;
@@ -53,15 +54,14 @@ section.card-header-top {
 }
 
 .card-container {
-  display: flex;
-  flex-flow: column;
+  display: grid;
+  place-items: center;
   gap: 15px;
-  justify-content: center;
-  align-items: center;
+  padding: 0 1rem;
 }
 
 .card {
-  width: 95%;
+  width: 100%;
   background-color: #fff;
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
@@ -98,7 +98,5 @@ section.card-header-top {
 }
 
 footer {
-  //   background-color: red;
-  margin-top: 2rem;
   padding: 0.7rem;
 }
