@@ -1,0 +1,104 @@
+@import "reset";
+@import "variable";
+
+body {
+  background-color: $very-light-gray;
+  font-size: $f-size;
+  font-family: $f-family;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: $paddingY $paddingX 0;
+}
+
+p {
+  color: $Grayish-blue;
+}
+
+a {
+  text-decoration: none;
+}
+section.card-header-top {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    max-width: 520px;
+    text-align: center;
+    padding: 0 0.6rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.card-headings {
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
+  h1 {
+    font-weight: map-get($f-weight, regular);
+  }
+  h2 {
+    color: $very-dark-blue;
+    font-weight: map-get($f-weight, bold);
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 95%;
+  background-color: #fff;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 1.4rem 1rem 0.3rem;
+
+  h3 {
+    color: $very-dark-blue;
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    padding-bottom: 1.6rem;
+  }
+}
+
+.card-img {
+  text-align: end;
+  padding-bottom: 1rem;
+}
+
+.supervisor {
+  border-top: 4px solid $Cyan;
+}
+.team-builder {
+  border-top: 4px solid $red;
+}
+.karma {
+  border-top: 4px solid $Orange;
+}
+.calculator {
+  border-top: 4px solid $Blue;
+}
+
+footer {
+  //   background-color: red;
+  margin-top: 2rem;
+  padding: 0.7rem;
+}
