@@ -131,6 +131,7 @@ section.card-header-top p {
 
 .card {
   width: 100%;
+  max-width: 350px;
   background-color: #fff;
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
